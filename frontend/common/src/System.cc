@@ -244,6 +244,7 @@ void System::init_cmdline_lock_commands(const char *display)
   add_cmdline_lock_cmd("mate-screensaver-command", "--lock", false);
   add_cmdline_lock_cmd("enlightenment_remote", "-desktop-lock", false);
   add_cmdline_lock_cmd("xdg-screensaver", "lock", false);
+  add_cmdline_lock_cmd("xautolock", "-locknow", false);
 
   if (display != NULL)
     {
